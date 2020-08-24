@@ -1,0 +1,4296 @@
+[
+  {
+    "ts": 149863887453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "global(./dist/index.js:13:4)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "13",
+      "column": "4",
+      "funcLine": "1",
+      "funcColumn": "1",
+      "name": "global(./dist/index.js:13:4)",
+      "category": "JavaScript",
+      "url": "global(./dist/index.js:13:4)"
+    }
+  },
+  {
+    "ts": 149863887453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863887453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863887453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863888905,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863888905,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863888905,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863888905,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863891341,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863891341,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863891341,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863900089,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863900089,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863900089,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863901216,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863901216,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863901216,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863907128,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863907128,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863907128,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863908407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863908407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863908407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863912046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863912046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863912046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863913180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863913180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863913180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863915912,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863915912,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863915912,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863917392,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863917392,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863917392,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863925006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863925006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863925006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863930134,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863930134,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863930134,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863932772,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863934114,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863938269,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC Full collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC Full collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC Full collection]"
+    }
+  },
+  {
+    "ts": 149863940740,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC Full collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC Full collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC Full collection]"
+    }
+  },
+  {
+    "ts": 149863944593,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863944593,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863944593,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863945918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863945918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863945918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863947080,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863948484,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149863948484,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863948484,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863948484,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863950951,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863950951,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863950951,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863952228,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863952228,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863952228,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863953496,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863953496,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863953496,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863954546,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863954546,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863954546,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863955825,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863955825,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863955825,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863956918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863956918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863956918,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863958194,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863958194,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863958194,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863962443,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863962443,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863962443,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863966070,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863966070,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863966070,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863977247,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863977247,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863977247,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863978548,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863978548,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863978548,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863984328,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC Full collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC Full collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC Full collection]"
+    }
+  },
+  {
+    "ts": 149863986166,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC Full collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC Full collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC Full collection]"
+    }
+  },
+  {
+    "ts": 149863990167,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863990167,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863990167,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863992822,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863992822,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863992822,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863995430,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149863995430,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863995430,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863996733,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149863996733,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149863996733,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864000650,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864000650,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864000650,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864001959,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864001959,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864001959,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864005924,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864005924,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864005924,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864007227,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864007227,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864007227,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864008532,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864008532,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864008532,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864009840,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864009840,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864009840,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864012281,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864012281,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864012281,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864015198,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864015198,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864015198,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864019377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864019377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864019377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864020769,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864020769,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864020769,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864022006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864022006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864022006,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864025984,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864025984,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864025984,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864028403,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864028403,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864028403,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864029710,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864029710,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864029710,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864036180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864036180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864036180,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864038809,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864038809,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864038809,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864040171,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864040171,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864040171,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864041528,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864041528,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864041528,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864042839,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864042839,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864042839,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864045453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864045453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864045453,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864049383,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864049383,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864049383,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864050360,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864050360,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864050360,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864050360,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149864052046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149864052046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864052046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864052046,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864053325,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864053325,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864053325,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864066064,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864066064,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864066064,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864068930,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864068930,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864068930,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864080291,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864080291,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864080291,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864081561,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864081561,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864081561,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864084142,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864084142,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864084142,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864086711,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864086711,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864086711,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864089260,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864089260,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864089260,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864090564,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864090564,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864090564,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864100747,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864100747,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864100747,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864102234,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864102234,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864102234,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864104981,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864104981,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864104981,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864106262,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864106262,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864106262,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864108807,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864108807,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864108807,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864110077,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864110077,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864110077,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864111377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864111377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864111377,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864112477,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864112477,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864112477,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864118685,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864118685,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864118685,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864119969,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864119969,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864119969,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864124001,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864124001,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864124001,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864126407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864126407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864126407,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864127143,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149864128741,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[GC YoungGen collection]",
+    "cat": "Metadata",
+    "args": {
+      "name": "[GC YoungGen collection]",
+      "category": "Metadata",
+      "parent": 3,
+      "url": "[GC YoungGen collection]"
+    }
+  },
+  {
+    "ts": 149864131352,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864131352,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864131352,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864132681,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864132681,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864132681,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864133993,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864133993,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864133993,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864135309,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864135309,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864135309,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864143197,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864143197,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864143197,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864144474,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:2:11)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "2",
+      "column": "11",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:2:11)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:2:11)"
+    }
+  },
+  {
+    "ts": 149864144474,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864144474,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "B",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864146911,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "[Native] arrayPrototypePush",
+    "cat": "Native",
+    "args": {
+      "name": "[Native] arrayPrototypePush",
+      "category": "Native",
+      "parent": 2,
+      "url": "[Native] arrayPrototypePush"
+    }
+  },
+  {
+    "ts": 149864146911,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "fib(./dist/index.js:8:16)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "8",
+      "column": "16",
+      "funcLine": "2",
+      "funcColumn": "11",
+      "name": "fib(./dist/index.js:8:16)",
+      "category": "JavaScript",
+      "parent": 1,
+      "url": "fib(./dist/index.js:8:16)"
+    }
+  },
+  {
+    "ts": 149864146911,
+    "pid": 57002,
+    "tid": 1365784,
+    "ph": "E",
+    "name": "global(./dist/index.js:13:4)",
+    "cat": "JavaScript",
+    "args": {
+      "line": "13",
+      "column": "4",
+      "funcLine": "1",
+      "funcColumn": "1",
+      "name": "global(./dist/index.js:13:4)",
+      "category": "JavaScript",
+      "url": "global(./dist/index.js:13:4)"
+    }
+  }
+]
