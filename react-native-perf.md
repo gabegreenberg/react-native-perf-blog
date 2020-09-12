@@ -1,38 +1,84 @@
 # React-native-perf
 
-## Overview of Hermes
+## What is Hermes?
 
-- What is Hermes
-  - An engine optimized for running RN on Android devices
-  - How to use Hermes: [Using hermes](https://reactnative.dev/docs/hermes)
-- How is it better than other engines? Possible comparisons with V8 and JSC.
-  - Summarize this [article](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html) where an experiment was run to compare Hermes vs JS engine, and record of the runtime performance
-- Introduce the transformer
-  - A mechanism that converts information from Hermes profile to be processed by Chrome
-  - Developers can now evaluate the app's performance on Chrome DevTools
+Hermes is an open sourced JavaScript engine which is optimised to run React Native applications on Android. It was announced by Facebook at the keynote at [Chain React 2019](https://www.youtube.com/watch?v=zEjqDWqeDdg&list=PLE7tQUdRKcyYA_l4Vo-OQi6yyxtTmw1OS&index=2&t=0s&ab_channel=InfiniteRed) Hermes has several advantages over other engines in areas like start up times, memory usage and app size.
 
-## Hermes Profile Transformer
+The use of Hermes in React Native applications is optional at this time, however, considering that it has been explicitly designed by Facebook for React Native, it is bound to be the preferrable mode of running React Native applications in the future.
+
+For more information on Hermes and how to use it, you can head over to its [documentation](https://reactnative.dev/docs/hermes).
+
+The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Mr. N. Parashuram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application callled Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
+
+For more information on this article, please read [this article](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html).
+
+## Trace Events formats
+
+React Native applications running on Hermes have a mechanism in place to profile the application as it runs. The process to do so is relatively simple. The developer menu of RN applications running on Hermes has an option to toggle profiling. Upon enabling profiling, the profiler starts to create trace events (in the form of samples and stack frames) which can be used to obtain timing information of the functions running.
+
+However, the trace events created by the Hermes profiler are of the JSON Object format as opposed to the Chrome supported JSON Array Format. There is hence a need for a [transformer](https://www.npmjs.com/package/hermes-profile-transformer) that converts the Hermes profile into JSON Array format which is supported by Chrome DevTools.
 
 ### Understanding trace events
 
-Trace events are data points that determine the state of an app at any point of time. They can contain information about the functions running at particular durations in the application. The Hermes profiles are of the JSON format, which has two variations, namely -
+Trace events are data points that determine the state of an app at any point of time. These data points include names of the functions running, their process and thread IDs among many others. The most common sampling profiles are usually compliant to the JSON format and can be in 2 formats, namely -
 
-1. JSON Array format - JSON Array format is the simplest format, it simply has an array of event objects which indicate the start and end times (based on phases) and can be loaded into Chrome DevTools to visualise the performance of an application.
-2. JSON Object format - JSON Object format allows for more data to be captured in the events, by taking a variety of properties as inputs.
+1. JSON Array format - JSON Array format is the simplest format, it simply has an array of event objects which indicate the start and end times (based on **phases**) and can be loaded into Chrome DevTools to visualise the performance of an application.
+   Eg:
+   ```ts
+   [
+   	{ name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
+   	{ name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
+   ];
+   ```
+   The JSON array format is possibly the simplest and most effective way to store the profiling information of an application. It is easy to read and hence is widely adopted.
+2. JSON Object format - JSON Object format, as its name suggests, is a collection of key-value pairs that can be used to capture the state of the application.
+   Eg:
 
-The event categories, phases, timestamp and args are critical arguments that add a lot of information to the events making profiling easy.
-Stack traces can be associated with events by means of "sf" parameter or an array of stack traces.
+```ts
+  {
+    "traceEvents": [
+      {"name": "Asub", "cat": "PERF", "ph": "B", "pid": 22630, "tid": 22630, "ts": 829},
+      {"name": "Asub", "cat": "PERF", "ph": "E", "pid": 22630, "tid": 22630, "ts": 833}
+    ],
+    "displayTimeUnit": "ns",
+    "systemTraceEvents": "SystemTraceData",
+    "otherData": {
+      "version": "My Application v1.0"
+    },
+    "stackFrames": {...}
+    "samples": [...],
+  }
+```
 
-The _phases_ of events are the most important properties for tracing events as they indicate the state of the events in the call stack. In the case of Hermes profile, we assume that all events are duration events.
+The `object` contains of 3 keys namely, `traceEvents`, `samples` and `stackFrames`, each of these are extremely important to analyse the performance of the application. The benefit of this structure over the JSON Array Format is that the information is stored in a more efficient format and additional data points can be added.
 
-### Duration Events
+In the case of the Hermes profile, we get a JSON Object back, with metadata events in its `traceEvents` property and the `samples` and `stackFrames` properties capturing information about all the other functions running through the duration of the application. These propeties contain essential information such as event categories, phases and timestamps that help us obtain maximum information from the profile.
 
-- Begin and End Phases
-- Does not work with improperly nested functions (usually introduced by asynchronous execution of code). These cases can be handled by Async Events
+### Events and Phases
 
-## Usage and interpretation (regular JS files)
+Events are actions that are triggered while an application is being run. These events can be in a variety of phases. The simplest type of event to understand is the Duration Event. As the name indicates, these events simply capture the duration of an action. Two distinct data points, namely the `start` and the `end` of a duration event can completely specify the status of these actions. These states are known as phases.
 
-- The events can be categoried into broad categories based on the context of their origin. Events usually written in source code fall under the category of 'Javscript', while the events exected natively on the platform are appropriately categoried as 'Native'
+| SNo. | Event Type         | Phases                                                  |
+| ---- | ------------------ | ------------------------------------------------------- |
+| 1.   | Duration Events    | B(begin), E(end)                                        |
+| 2.   | Complete Events    | X                                                       |
+| 3.   | Instant Events     | I                                                       |
+| 4.   | Counter Events     | C                                                       |
+| 5.   | Async Events       | b(nestable start), n(nestable instant), e(nestable end) |
+| 6.   | Flow Events        | s(start), t(step), f(end)                               |
+| 7.   | Sample Events      | P                                                       |
+| 8.   | Object Events      | N(created), O(snapshot), D(destroyed)                   |
+| 9.   | Metadata Events    | M                                                       |
+| 10.  | Memory Dump Events | V(global), v(process)                                   |
+| 11.  | Mark Events        | R                                                       |
+| 12.  | Clock sync Events  | c                                                       |
+| 13.  | Context Events     | (,)                                                     |
+
+For our particular usecase, the events are just function calls and different samples indicate when a function is pushed and popped from the call stack. The _phases_ of events are, hence, the most important properties for tracing events as they indicate the state of the functions in the call stack. For our usecase, we can assume that the Hermes profile consists of only Duration Events
+
+## Interpretation of different events in a profile
+
+The events can also be categoried into broad categories based on the context of their origin. Events usually written in source code fall under the category of 'Javscript', while the events exected natively on the platform are appropriately categoried as 'Native'
 
 ### Definition
 
@@ -90,3 +136,8 @@ The categories of events help us determine the color of the function rows in the
    - `react-native-internals`
    - `node_modules`
 2. Obtained from Hermes Samples - These categories are obtained by default and can be mapped to function calls. Categories `Javascript` and `Native` are predominantly seen, and in tandem with Source maps, this can help us differentiate from the boiler plate code written in node_modules and the actual code that we write.
+
+## Bibliography
+
+- [Using hermes](https://reactnative.dev/docs/hermes)
+- [N Parashuram's blog on React Native performance with Hermes](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html)
