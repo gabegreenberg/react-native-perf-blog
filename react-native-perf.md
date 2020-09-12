@@ -28,8 +28,8 @@ Trace events are data points that determine the state of an app at any point of 
    Eg:
    ```ts
    [
-   	{ name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
-   	{ name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
+     { name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
+     { name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
    ];
    ```
    The JSON array format is possibly the simplest and most effective way to store the profiling information of an application. It is easy to read and hence is widely adopted.
@@ -117,14 +117,11 @@ The Hermes Profile transformer works by identifying start and end nodes at each 
 
 ## Usage: Integrated into RN CLI
 
-- Command:
-  - Only works for DEV mode, since CLI interacts with adb to pull the profile from Android device
-  - `npx react-native profile-hermes`, allows users to pull the converted device to their local machine
-- Three categories - what each category represents and which parts of the code base should we be focusing on
-  - Categories: Native, JS, node_modules
-  - Which part to focus on: JS code (functions that are part of the program)
-- Timestamp and duration of events
-  - How to look at timestamp and duration of events, so that evaluate which function of the app takes the most time
+We also implemented a new command `npx react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
+
+Please note that the command only works if the app is run in Development mode, since the command uses `adb pull` to download the profile from user's Android device.
+
+You can read more into the usage of the command, including the optional arguments it takes, in the documentation [here](https://github.com/react-native-community/cli/blob/master/docs/commands.md#profile-hermes)
 
 ### Insights from profiling information
 
