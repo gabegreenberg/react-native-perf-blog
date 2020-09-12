@@ -10,7 +10,9 @@ For more information on Hermes and how to use it, you can head over to its [docu
 
 The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Mr. N. Parashuram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application callled Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
 
-For more information on this article, please read [this article](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html).
+![Hermes Performance Improvements](assets/images/hermes-improvements.jpeg)
+
+For more information on this, please read [this article](http:**//blog.nparashuram.com/2019/07/facebook**-announced-hermes-new.html).
 
 ## Trace Events formats
 
@@ -74,15 +76,19 @@ Events are actions that are triggered while an application is being run. These e
 | 12.  | Clock sync Events  | c                                                       |
 | 13.  | Context Events     | (,)                                                     |
 
-For our particular usecase, the events are just function calls and different samples indicate when a function is pushed and popped from the call stack. The _phases_ of events are, hence, the most important properties for tracing events as they indicate the state of the functions in the call stack. For our usecase, we can assume that the Hermes profile consists of only Duration Events
+For our particular usecase, the events are just function calls and different samples indicate when a function is pushed and popped from the call stack. The _phases_ of events are, hence, the most important properties for tracing events as they indicate the state of the functions in the call stack. For our usecase, we can assume that the Hermes profile consists of only Duration Events.
 
 ## Interpretation of different events in a profile
 
-The events can also be categoried into broad categories based on the context of their origin. Events usually written in source code fall under the category of 'Javscript', while the events exected natively on the platform are appropriately categoried as 'Native'
+The Hermes profile is of the JSON Object Format, however, the `traceEvents` property does not contain timing information of functions as we expect. Instead the `traceEvents` property merely contains of metadata events, and the rest of the information is captured in the `samples` and `stackFrames` properties.
 
-### Definition
+The `samples`, as the name suggests, consists of snapshots of the function call stack at specific timestamps. They also contain an `sf` property which corresponds to an element in the `stackFrames` property of the profile.
 
-![DemoImage](assets/images/startnodes-endnodes.png)
+![Relationship between sf property and stackFrames](assets/images/samples-stackframes.png)
+
+The events can also be categoried into broad categories based on their origin. Events usually written in source code fall under the category of **Javascript**, while the events exected natively on the platform are appropriately categoried as **Native**. **Metadata** is another primary category of events and are usually collected in the `traceEvents` property of the Hermes profile.
+
+### Definitions
 
 1. **Nodes** - Nodes stand for all the events possible in a function call stack. For eg:
 
@@ -105,6 +111,8 @@ The events can also be categoried into broad categories based on the context of 
 2. **Active and Last Active Nodes** - Building upon the previous definition, the active nodes at any particular time are the nodes that are active in the current timestamp. The Last active nodes similiarly stand for the nodes that were active in the preceding sampling time.
 3. **Start and End Nodes** - We can define start nodes as **nodes active in current timestamp but absent in last active nodes**, while the end nodes can be defined as **nodes in last active nodes but absent in current active nodes**
 
+![Start and end nodes](assets/images/startnodes-endnodes.png)
+
 The Hermes Profile transformer works by identifying start and end nodes at each timestamp and creating events from these nodes to be displayed on Chrome DevTools.
 
 ## Usage: Integrated into RN CLI
@@ -118,7 +126,7 @@ The Hermes Profile transformer works by identifying start and end nodes at each 
 - Timestamp and duration of events
   - How to look at timestamp and duration of events, so that evaluate which function of the app takes the most time
 
-### interpretation of the profile
+### Insights from profiling information
 
 The duration of a function call can be identified by from the timestamps of the corresponding start and end events. If this information is successfully captured, the events show up in horizontal bars.
 ![Profile](assets/images/profile.png)
