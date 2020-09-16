@@ -8,11 +8,11 @@ The use of Hermes in React Native applications is optional at this time, however
 
 For more information on Hermes and how to use it, you can head over to its [documentation](https://reactnative.dev/docs/hermes).
 
-The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Mr. N. Parashuram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application callled Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
+The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Ram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application callled Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
 
 ![Hermes Performance Improvements](assets/images/hermes-improvements.jpeg)
 
-For more information on this, please read [this article](http:**//blog.nparashuram.com/2019/07/facebook**-announced-hermes-new.html).
+For more information on this, please read [this article](https://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html).
 
 ## Trace Events formats
 
@@ -28,8 +28,8 @@ Trace events are data points that determine the state of an app at any point of 
    Eg:
    ```ts
    [
-     { name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
-     { name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
+   	{ name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
+   	{ name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
    ];
    ```
    The JSON array format is possibly the simplest and most effective way to store the profiling information of an application. It is easy to read and hence is widely adopted.
@@ -145,4 +145,4 @@ The categories of events help us determine the color of the function rows in the
 ## Bibliography
 
 - [Using hermes](https://reactnative.dev/docs/hermes)
-- [N Parashuram's blog on React Native performance with Hermes](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html)
+- [Ram's blog on React Native performance with Hermes](http://blog.nparashuram.com/2019/07/facebook-announced-hermes-new.html)
