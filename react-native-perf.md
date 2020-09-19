@@ -1,5 +1,10 @@
-# React-native-perf
+# Optimising for Performance in React Native using Hermes
 
+## Introduction
+<!-- What is profiling, How is it beneficial? 
+Purpose - Visualise RN performance on Chrome Dev Tools, mention the tool `hermes profile transformer` 
+Little introduction to us and the project in general.
+In this article, we will dive into using Hermes in your RN app and visualising the app's performance on screens-->
 ## What is Hermes?
 
 Hermes is an open sourced JavaScript engine which is optimised to run React Native applications on Android. It was announced by Facebook at the keynote at [Chain React 2019](https://www.youtube.com/watch?v=zEjqDWqeDdg&list=PLE7tQUdRKcyYA_l4Vo-OQi6yyxtTmw1OS&index=2&t=0s&ab_channel=InfiniteRed) Hermes has several advantages over other engines in areas like start up times, memory usage and app size.
@@ -8,7 +13,7 @@ The use of Hermes in React Native applications is optional at this time, however
 
 For more information on Hermes and how to use it, you can head over to its [documentation](https://reactnative.dev/docs/hermes).
 
-The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Ram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application callled Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
+The Hermes engine helps bolster the performance of the React Native application in an mobile environment as observed by the experiments performed by [Ram](https://twitter.com/nparashuram) and demonstrated at Chain React 2019, where the Hermes engine was unvieled. He demos certain live applications namely the Chain React Conference application as well as another React Native application called Mattermost and profiles them while running with and without Hermes. The gains in speed and performance were seen clearly in the experiements and this served as a great introduction of Hermes in the React Native ecosystem as a powerhouse.
 
 ![Hermes Performance Improvements](assets/images/hermes-improvements.jpeg)
 
@@ -115,13 +120,15 @@ The events can also be categoried into broad categories based on their origin. E
 
 The Hermes Profile transformer works by identifying start and end nodes at each timestamp and creating events from these nodes to be displayed on Chrome DevTools.
 
-## Usage: Integrated into RN CLI
+## Usage: With RN CLI
 
 We also implemented a new command `npx react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
-
+<!-- Add steps to profile - similar to the RN Website Docs -->
 Please note that the command only works if the app is run in Development mode, since the command uses `adb pull` to download the profile from user's Android device.
 
 You can read more into the usage of the command, including the optional arguments it takes, in the documentation [here](https://github.com/react-native-community/cli/blob/master/docs/commands.md#profile-hermes)
+
+<!-- Usage: JS - Fibonacci - DP v/s Recursion, (n-1 takes longer than n-2); Using the `hermes-profile-transformer` and profiling pure JS; - The command to profile in JS -->
 
 ### Insights from profiling information
 
@@ -142,6 +149,9 @@ The categories of events help us determine the color of the function rows in the
    - `node_modules`
 2. Obtained from Hermes Samples - These categories are obtained by default and can be mapped to function calls. Categories `Javascript` and `Native` are predominantly seen, and in tandem with Source maps, this can help us differentiate from the boiler plate code written in node_modules and the actual code that we write.
 
+<!-- 1. Identify functions that take longer - Example - Any function which spans over a long time. 2. Identify third party modules - which may slow down the performance -->
+
+<!-- Can be used in production, however, currently works only in DEV - more updates on this will come later -->
 ## Bibliography
 
 - [Using hermes](https://reactnative.dev/docs/hermes)
