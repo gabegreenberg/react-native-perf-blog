@@ -2,16 +2,11 @@
 
 ## Introduction
 
-Have you ever wondered why your React Native app is running slowly, or which of the functions in your app are taking the most time and hurting your runtime performance? If the answer is yes, you definitely should read until the end of our blog. We have developed a new tool called [Hermes-profile-transfomer](https://www.npmjs.com/package/hermes-profile-transformer), which will help you visualize your app's performance in an easy and accurate way.
+Have you ever wondered why your React Native app is running slowly, or which of the functions in your app are taking the most time and hurting the performance? If the answer is yes, you should read until the end of our blog. We have developed a new tool called [Hermes-profile-transfomer](https://www.npmjs.com/package/hermes-profile-transformer), which will help you visualize your app's performance in an easy and accurate way.
 
 Before diving into what the tool does, you may have the question: what exactly is profiling? [Wikipedia](<https://en.wikipedia.org/wiki/Profiling_(computer_programming)>) explains profiling as "a form of dynamic program analysis that measures, for example, the space (memory) or time complexity of a program, the usage of particular instructions, or the frequency and duration of function calls." Profiling is important in understanding the runtime performance of your program, or in particular React Native app, and finding solutions to optimize it.
 
 The new tool that we wrote, Hermes-profile-transfomer, helps developers profile and visualize the performance of JavaScript running on [Hermes](https://github.com/facebook/hermes) in a React Native app. A common way to analyze the performance of program is through analyzing the sampling profile in [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)'s Performance tab. However, the profiler output from Hermes has a different format from what the Chrome DevTools processes. This is where our tool comes in; it transforms the Hermes profile to the Chrome's event tracing format. This allows developers to use Chrome DevTools to visualize their app's sampling profile, thus understands which functions take a long time. In this article, we will dive into profiling your React Native app using Hermes and visualising the app's performance on screens.
-
-<!-- What is profiling, How is it beneficial?
-Purpose - Visualise RN performance on Chrome Dev Tools, mention the tool `hermes profile transformer`
-Little introduction to us and the project in general.
-In this article, we will dive into using Hermes in your RN app and visualising the app's performance on screens-->
 
 ## What is Hermes?
 
@@ -130,7 +125,7 @@ The Hermes Profile transformer works by identifying start and end nodes at each 
 
 ## Usage: With React Native CLI
 
-We also implemented a new command `npx react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
+We also implemented a new command `react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
 
 Here is the flow:
 
@@ -145,7 +140,7 @@ Here is the flow:
 - Open the **Developer Menu** by pressing `d` again.
 - Select **Disable Sampling Profiler** to stop recording and save the sampling profiler.
 
-A toast will show the location where the sampling profiler has been saved, usually in `/data/user/0/com.appName/cache/*.cpuprofile`
+  A toast will show the location where the sampling profiler has been saved, usually in `/data/user/0/com.appName/cache/*.cpuprofile`
 
 <p align="center">
 <img src="./assets/images/HermesProfileSaved.png" height=465 width=250 center alt="Toast Notification of Profile saving"></p>
@@ -201,7 +196,7 @@ Now you can visualize your app's runtime performance by taking a look at the fre
 
 <!-- Usage: JS - Fibonacci - DP v/s Recursion, (n-1 takes longer than n-2); Using the `hermes-profile-transformer` and profiling pure JS; - The command to profile in JS -->
 
-### Insights from profiling information
+## Insights from profiling information
 
 The duration of a function call can be identified by from the timestamps of the corresponding start and end events. If this information is successfully captured, the events show up in horizontal bars.
 ![Profile](assets/images/profile.png)
@@ -220,9 +215,11 @@ The categories of events help us determine the color of the function rows in the
    - `node_modules`
 2. Obtained from Hermes Samples - These categories are obtained by default and can be mapped to function calls. Categories `Javascript` and `Native` are predominantly seen, and in tandem with Source maps, this can help us differentiate from the boiler plate code written in node_modules and the actual code that we write.
 
+As an example from the above profile in the image, we can identify some functions which have a long duration. For instance, `callFunctionReturnFlushedQueue` has both high frequency and long duration. It is called four times, and take approximately 1.71s on a call. Another example is the `anonymous` function which belongs to the category `react-native-internals` spanning for 1.67s. In addition, as the function calls are the color-coded, we can easily identify the third party modules that may slow down the performance of the app.
+
 <!-- 1. Identify functions that take longer - Example - Any function which spans over a long time. 2. Identify third party modules - which may slow down the performance -->
 
-<!-- Can be used in production, however, currently works only in DEV - more updates on this will come later -->
+We hope that this article has given you useful information on profiling your React Native app using Hermes and visualizing its performance on Chrome DevTools. As we mentioned above, the new command `react-native profile-hermes` currently works only in development mode. However, this can be used in production also, as more details will come soon. We also want to list some resources that you may find helpful in learning more about Hermes and React Native performance.
 
 ## Bibliography
 
