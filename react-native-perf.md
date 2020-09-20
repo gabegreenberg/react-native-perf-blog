@@ -128,15 +128,76 @@ The events can also be categoried into broad categories based on their origin. E
 
 The Hermes Profile transformer works by identifying start and end nodes at each timestamp and creating events from these nodes to be displayed on Chrome DevTools.
 
-## Usage: With RN CLI
+## Usage: With React Native CLI
 
 We also implemented a new command `npx react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
 
-<!-- Add steps to profile - similar to the RN Website Docs -->
+Here is the flow:
 
-Please note that the command only works if the app is run in Development mode, since the command uses `adb pull` to download the profile from user's Android device.
+1. First, you need to enable Hermes in your React Native app by following this [instruction](https://reactnative.dev/docs/hermes)
+
+2. Record a Hermes sampling profiler by following these steps:
+
+- Navigate to your running Metro server terminal.
+- Press `d` to open the **Developer Menu.**
+- Select **Enable Sampling Profiler.**
+- Execute your JavaScript by in your app (press buttons, etc.)
+- Open the **Developer Menu** by pressing `d` again.
+- Select **Disable Sampling Profiler** to stop recording and save the sampling profiler.
+
+A toast will show the location where the sampling profiler has been saved, usually in `/data/user/0/com.appName/cache/*.cpuprofile`
+
+<p align="center">
+<img src="./assets/images/HermesProfileSaved.png" height=465 width=250 center alt="Toast Notification of Profile saving"></p>
+
+3. Execute command from CLI
+
+You can use the command `react-native profile-hermes` from the React Native CLI to pull the converted Chrome profile to your local machine. Please note that the command only works if the app is run in Development mode, since the command uses `adb pull` to download the profile from user's Android device.
+
+Here is the flow:
+
+First, you should do this step below for the program to obtain source maps, which will help the profile associate trace events with the application code. You can do that simply by enabling `bundleInDebug` if the app is running in development mode like below:
+
+- In your app's `android/app/build.gradle` file, add:
+
+```java
+project.ext.react = [
+  bundleInDebug: true,
+]
+```
+
+> Be sure to clean the build whenever you make any changes to `build.gradle`
+
+- Clean the build by running:
+
+```sh
+cd android && ./gradlew clean
+```
+
+- Run your app:
+
+```sh
+npx react-native run-android
+```
+
+- Run the command to download the converted profile:
+
+```sh
+npx react-native profile-hermes [destinationDir]
+```
 
 You can read more into the usage of the command, including the optional arguments it takes, in the documentation [here](https://github.com/react-native-community/cli/blob/master/docs/commands.md#profile-hermes)
+
+4. Open the downloaded profile on Chrome DevTools
+
+To visualize the downloaded profile in step 3 above in Chrome DevTools, do the following:
+
+- Open Chrome DevTools.
+- Select the **Performance** tab.
+- Right click and choose **Load profile...**
+
+ <img src="./assets/images/openChromeProfile.png" alt="Loading a performance profile on Chrome DevTools">
+Now you can visualize your app's runtime performance by taking a look at the frequency and duration of each function call. We will suggest some insights we get from the profile in the next part.
 
 <!-- Usage: JS - Fibonacci - DP v/s Recursion, (n-1 takes longer than n-2); Using the `hermes-profile-transformer` and profiling pure JS; - The command to profile in JS -->
 
