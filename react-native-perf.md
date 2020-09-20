@@ -36,8 +36,8 @@ Trace events are data points that determine the state of an app at any point of 
    Eg:
    ```ts
    [
-     { name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
-     { name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
+   	{ name: "Asub", cat: "PERF", ph: "B", pid: 22630, tid: 22630, ts: 829 },
+   	{ name: "Asub", cat: "PERF", ph: "E", pid: 22630, tid: 22630, ts: 833 },
    ];
    ```
    The JSON array format is possibly the simplest and most effective way to store the profiling information of an application. It is easy to read and hence is widely adopted.
@@ -127,9 +127,9 @@ The Hermes Profile transformer works by identifying start and end nodes at each 
 
 We also implemented a new command `react-native profile-hermes` on the [React Native CLI](https://github.com/react-native-community/cli) to make the process smooth for developers. The command automatically transforms the profile using our `hermes-profile-transformer` package and pulls the converted device to user's local machine.
 
-Here is the flow:
+Follow these steps to start profiling your application:
 
-1. First, you need to enable Hermes in your React Native app by following this [instruction](https://reactnative.dev/docs/hermes)
+1. First, you need to enable Hermes in your React Native app by following these [instruction](https://reactnative.dev/docs/hermes)
 
 2. Record a Hermes sampling profiler by following these steps:
 
@@ -194,7 +194,67 @@ To visualize the downloaded profile in step 3 above in Chrome DevTools, do the f
  <img src="./assets/images/openChromeProfile.png" alt="Loading a performance profile on Chrome DevTools">
 Now you can visualize your app's runtime performance by taking a look at the frequency and duration of each function call. We will suggest some insights we get from the profile in the next part.
 
-<!-- Usage: JS - Fibonacci - DP v/s Recursion, (n-1 takes longer than n-2); Using the `hermes-profile-transformer` and profiling pure JS; - The command to profile in JS -->
+## Usage: With Plain JavaScript
+
+As mentioned earlier, Hermes is a JavaScript engine, and hence it can also be used to profile regular JavaScript outside of a React Native application as well.
+
+Hermes can be installed on your system to execute vanilla JavaScript by means of the package[`jsvu`](https://www.npmjs.com/package/jsvu) on npm. After installing Hermes, we can run our files with Hermes by simply running
+
+> `hermes index.js`
+
+The advantages of profiling still remain, as we can identify efficient implementations of functions. To demonstrate this, we can profile a simple JS function to calculate the nth Fibonacci number.
+
+We all agree that the recursive implementation of calculating the Fibonacci number is slower than the Dynamic Programming approach to do the same.
+
+We can verify the following facts by means of profiling our Javascript code. This can be done by running your function with the `--sample-profiling` flag. To be very specific, the exact command we used to generate the profiles shown below is
+
+> `hermes --sample-profiling ./index.js 2> trace-hermes.json`
+
+<table>
+  <tr> 
+    <td> Recursive </td> 
+    <td> Dynamic Programming </td>
+  </tr>
+  <tr> 
+    <td>
+    <pre lang="JavaScript">
+const fibRecursive = (n) => {
+        if (n == 0 || n == 1) {
+          return n;
+        }
+        return fibRecursive(n - 1) + fibRecursive(n - 2);
+      };
+    </pre> 
+    </td> 
+    <td>
+    <pre lang="JavaScript">
+      const fibDynamic = (n) => {
+        if (n == 0 || n == 1) {
+          return n;
+        }
+        let firstNumber = 0;
+        let secondNumber = 1;
+        let temp = 1;
+        for (let i = 2; i < n; i++) {
+          temp = firstNumber + secondNumber;
+          firstNumber = secondNumber;
+          secondNumber = temp;
+        }
+        return secondNumber;
+      };
+    </pre> 
+    </td> 
+  </tr>
+  <tr> 
+      <td> <img src="assets/images/fib-recursive.png" width=800/> 
+        <ul>
+         <li> We notice that the Recursive implementation is much slower. Here, fibRecursive(30) takes around 180ms </li>
+         <li> We can also note that fibRecursive(n-1) calls take longer than fibRecursive(n-2) as expected </li>
+        </ul>
+      </td>
+      <td> <img src="assets/images/fib-dynamic.png" width=800/> Fibonacci numbers can be calculated much faster using the Dynamic Programming approach, here we calculate fibDynamic(300000) within approximately 8ms </td>
+  </tr>
+</table>
 
 ## Insights from profiling information
 
@@ -212,12 +272,11 @@ The categories of events help us determine the color of the function rows in the
 
 1. Obtained from **source maps** - Sourcemaps can be optionally provided to augment the information provided by hermes. The sourcemaps help us identify better categories for events, hence adding value to our visualisation. These categories include two broad categories, namely:
    - `react-native-internals`
-   - `node_modules`
+   - `other_node_modules`
 2. Obtained from Hermes Samples - These categories are obtained by default and can be mapped to function calls. Categories `Javascript` and `Native` are predominantly seen, and in tandem with Source maps, this can help us differentiate from the boiler plate code written in node_modules and the actual code that we write.
 
-As an example from the above profile in the image, we can identify some functions which have a long duration. For instance, `callFunctionReturnFlushedQueue` has both high frequency and long duration. It is called four times, and take approximately 1.71s on a call. Another example is the `anonymous` function which belongs to the category `react-native-internals` spanning for 1.67s. In addition, as the function calls are the color-coded, we can easily identify the third party modules that may slow down the performance of the app.
-
-<!-- 1. Identify functions that take longer - Example - Any function which spans over a long time. 2. Identify third party modules - which may slow down the performance -->
+- As an example from the above profile in the image, we can identify some functions which have a long duration. For instance, `batchedUpdates$1` has both high frequency and long duration. It is called 10 times at the zoom level of the image, and takes different times on each call. We can hence note this is a crucial function if we wanted to optimise our code for speed. (This function however is internal to `react-native`, having the category of `react-native-internals`, hence knowing when and for how long this function is called can be used to React Native core developers to improve React Native performance).
+- Another example is the `unstable_runWithPriority` function which belongs to the category `other_node_modules` spanning for ~1 seconds. We notice that the colour of this particular bar is different as well. In this case, this is from the `scheduler` package, which can be understood by reading the summary of the function call in Chrome DevTools. The function calls are color-coded to denote their origin. This can hence help us identify which functions are being invoked from package and how they affect the performance of our application.
 
 We hope that this article has given you useful information on profiling your React Native app using Hermes and visualizing its performance on Chrome DevTools. As we mentioned above, the new command `react-native profile-hermes` currently works only in development mode. However, this can be used in production also, as more details will come soon. We also want to list some resources that you may find helpful in learning more about Hermes and React Native performance.
 
